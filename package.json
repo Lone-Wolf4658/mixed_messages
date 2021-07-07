@@ -1,0 +1,19 @@
+{
+  "name": "mixed_messages",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lone-Wolf4658/mixed_messages.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lone-Wolf4658/mixed_messages/issues"
+  },
+  "homepage": "https://github.com/Lone-Wolf4658/mixed_messages#readme"
+}
