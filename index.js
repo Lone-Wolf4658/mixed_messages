@@ -5,7 +5,7 @@ const data = require('./data.js');
 const getDayPhrase = (days, timeOfDay ) => {
     const ranDayNum = Math.floor(Math.random()*7)
     const ranTimeNum = Math.floor(Math.random()*4)
-    const today = getDayOfWeek();
+    const today = new Date().getDay(); 
     // Day handeling 
     if (ranDayNum === today) {
         // Today
@@ -54,25 +54,11 @@ const getDegrees = temp => {
 
 // FUNCTION - Main Sentence builder
 const getWeatherForcast = ({days, timeOfDay, weather, temp}) => {
-
-    
     const dayPhrase = getDayPhrase(days, timeOfDay);
     const weatherPhrase = getWeather(weather);
     const degree = getDegrees(temp);
   
-    
     return dayPhrase + weatherPhrase + degree
-};
-
-
-// Util functions
-
-const getDayOfWeek = () => {
-    // Returns 0-6
-    // Monday = 0
-    // Sunday = 6
-    const day = new Date(); 
-    return day.getDay();
 };
 
 
